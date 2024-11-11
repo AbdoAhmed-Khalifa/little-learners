@@ -30,6 +30,10 @@ export default {
           70: '#B3B3B3',
         },
       },
+      fontFamily: {
+        outfit: ['var(--font-outfit)'],
+        raleway: ['var(--font-raleway)'],
+      },
     },
   },
   plugins: [],

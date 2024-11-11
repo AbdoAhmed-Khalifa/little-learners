@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Raleway } from 'next/font/google';
 import { Outfit } from 'next/font/google';
+import Footer from './_components/footerComponents/Footer';
 
 export const raleway = Raleway({
   subsets: ['latin'],
@@ -28,8 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${raleway.variable} ${outfit.variable} antialiased`}>
+      <body className={`${raleway.variable} ${outfit.variable} antialiased  `}>
         {children}
+        <Footer />
       </body>
     </html>
   );
