@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Outfit, Raleway } from "next/font/google";
-import Header from "./_components/Header";
 import "@/app/_styles/globals.css";
+import { Outfit, Raleway } from "next/font/google";
+import Footer from "./_components/footerComponents/Footer";
+import Header from "./_components/Header";
 
 export const raleway = Raleway({
   subsets: ["latin"],
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body className={`${raleway.variable} ${outfit.variable} antialiased`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
