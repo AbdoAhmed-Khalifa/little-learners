@@ -7,7 +7,7 @@ import FooterBottom from './FooterBottom';
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-2 rounded-xl  border-dark-15 mx-10">
+    <footer className="bg-white border-2 rounded-xl  border-dark-15 mx-10 shadow-card">
       <div className="mx-auto max-w-screen px-7 pb-6 pt-16 sm:px-6 lg:px-24 lg:pt-24 font-outfit">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
