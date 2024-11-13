@@ -34,6 +34,9 @@ export default {
         outfit: ['var(--font-outfit)'],
         raleway: ['var(--font-raleway)'],
       },
+      boxShadow: {
+        'card': '6px 6px 0px 2px rgba(30,30,30,1)',
+      },
     },
   },
   plugins: [],
