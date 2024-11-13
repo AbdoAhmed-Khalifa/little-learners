@@ -1,0 +1,70 @@
+import {
+  AcademicCapIcon,
+  UserGroupIcon,
+  HeartIcon,
+  PuzzlePieceIcon,
+  UserIcon,
+  UsersIcon,
+} from "@heroicons/react/20/solid";
+import { ReactNode } from "react";
+import CardOne from "./card-one";
+
+export default function BenefitsSection() {
+  type CardContent = {
+    title: string;
+    description: string;
+    icon: ReactNode;
+  };
+
+  const cardOneContent: CardContent[] = [
+    {
+      title: "Holistic Learning Approach",
+      description:
+        "Our curriculum focuses on nurturing cognitive, social, emotional, and physical development, ensuring a well-rounded education.",
+      icon: <AcademicCapIcon className="size-[34px]" />,
+    },
+    {
+      title: "Experienced Educators",
+      description:
+        "Our passionate and qualified teachers create a supportive and stimulating learning environment.",
+      icon: <UserGroupIcon className="size-[34px]" />,
+    },
+    {
+      title: "Nurturing Environment",
+      description:
+        "We prioritize safety and provide a warm and caring atmosphere for every child.",
+      icon: <HeartIcon className="size-[34px]" />,
+    },
+    {
+      title: "Play-Based Learning",
+      description:
+        "We believe in the power of play to foster creativity, problem-solving skills, and imagination.",
+      icon: <PuzzlePieceIcon className="size-[34px]" />,
+    },
+    {
+      title: "Individualized Attention",
+      description:
+        "Our small class sizes enable personalized attention, catering to each child's unique needs.",
+      icon: <UserIcon className="size-[34px]" />,
+    },
+    {
+      title: "Parent Involvement",
+      description:
+        "We foster a strong parent-school partnership to ensure seamless communication and collaboration.",
+      icon: <UsersIcon className="size-[34px]" />,
+    },
+  ];
+
+  return (
+    <section className="mx-10 mt-20 grid grid-cols-1 gap-x-10 gap-y-[60px] md:grid-cols-2 lg:grid-cols-3">
+      {cardOneContent.map((cardOne) => (
+        <CardOne
+          key={cardOne.title}
+          title={cardOne.title}
+          description={cardOne.description}
+          icon={cardOne.icon}
+        />
+      ))}
+    </section>
+  );
+}

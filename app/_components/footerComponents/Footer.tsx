@@ -1,11 +1,11 @@
-import Image from 'next/image';
-import SectionList from './sectionList';
-import { footerList } from '@/app/_constants';
+import Image from "next/image";
+import SectionList from "./sectionList";
+import { footerList } from "@/app/_constants";
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-2 rounded-xl  border-dark-15 mx-10">
-      <div className="mx-auto max-w-screen px-7 pb-6 pt-16 sm:px-6 lg:px-24 lg:pt-24 font-outfit">
+    <footer className="mx-10 rounded-xl border-2 border-dark-15 bg-white">
+      <div className="max-w-screen font-outfit mx-auto px-7 pb-6 pt-16 sm:px-6 lg:px-24 lg:pt-24">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <div className="flex justify-center sm:justify-start">
@@ -17,21 +17,21 @@ export default function Footer() {
               />
             </div>
 
-            <p className="mt-6 max-w-md text-center leading-relaxed text-dark-30  sm:max-w-sm sm:text-left px-8 md:px-0 font-medium text-base">
+            <p className="mt-6 max-w-md px-8 text-center text-base font-medium leading-relaxed text-dark-30 sm:max-w-sm sm:text-left md:px-0">
               We believe in the power of play to foster creativity,
               problem-solving skills, and imagination.
             </p>
 
-            <ul className="mt-8 flex flex-col justify-center gap-3 sm:justify-start ">
+            <ul className="mt-8 flex flex-col justify-center gap-3 sm:justify-start">
               <li>
                 <a
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="transition flex items-center gap-2"
+                  className="flex items-center gap-2 transition"
                 >
                   <span className="sr-only">Email</span>
-                  <div className="w-9 h-9 bg-primary-97 border-2 border-dark-15 rounded-lg p-1.5 flex items-center justify-center">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-lg border-2 border-dark-15 bg-primary-97 p-1.5">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -42,7 +42,7 @@ export default function Footer() {
                     </svg>
                   </div>
 
-                  <p className="text-dark-15 font-medium text-base">
+                  <p className="text-base font-medium text-dark-15">
                     hello@littlelearners.com
                   </p>
                 </a>
@@ -52,24 +52,24 @@ export default function Footer() {
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="transition flex items-center gap-2"
+                  className="flex items-center gap-2 transition"
                 >
                   <span className="sr-only">Phone</span>
-                  <div className="w-9 h-9 bg-primary-97 border-2 border-dark-15 rounded-lg p-1.5 flex items-center justify-center">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-lg border-2 border-dark-15 bg-primary-97 p-1.5">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       className="size-6 fill-dark-15"
                     >
                       <path
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       />
                     </svg>
                   </div>
 
-                  <p className="text-dark-15 font-medium text-base">
+                  <p className="text-base font-medium text-dark-15">
                     +91 91813 23 2309
                   </p>
                 </a>
@@ -79,10 +79,10 @@ export default function Footer() {
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="transition flex items-center gap-2"
+                  className="flex items-center gap-2 transition"
                 >
                   <span className="sr-only">Location</span>
-                  <div className="w-9 h-9 bg-primary-97 border-2 border-dark-15 rounded-lg p-1.5 flex items-center justify-center">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-lg border-2 border-dark-15 bg-primary-97 p-1.5">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -96,7 +96,7 @@ export default function Footer() {
                     </svg>
                   </div>
 
-                  <p className="text-dark-15 font-medium text-base">
+                  <p className="text-base font-medium text-dark-15">
                     Somewhere in the World
                   </p>
                 </a>
@@ -104,7 +104,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="grid grid-cols-2 gap-8  md:grid-cols-4 lg:col-span-2">
+          <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:col-span-2">
             {footerList.map((item, index) => (
               <SectionList
                 sectionName={item.sectionName}
@@ -115,25 +115,25 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        <div className="mt-12 border-y border-dark-15 py-6 flex items-center md:justify-between flex-col md:flex-row">
-          <div className="flex items-center justify-center gap-4 font-outfit font-medium md:text-lg text-sm text-dark-30">
+        <div className="mt-12 flex flex-col items-center border-y border-dark-15 py-6 md:flex-row md:justify-between">
+          <div className="font-outfit flex items-center justify-center gap-4 text-sm font-medium text-dark-30 md:text-lg">
             <p>Term of Service</p>
-            <div className="md:w-0.5  w-[1px] md:h-6  h-5 bg-dark-15"></div>
+            <div className="h-5 w-[1px] bg-dark-15 md:h-6 md:w-0.5"></div>
             <p>Privacy Policy</p>
-            <div className="md:w-0.5 w-[1px] md:h-6 h-5 bg-dark-15"></div>
+            <div className="h-5 w-[1px] bg-dark-15 md:h-6 md:w-0.5"></div>
             <p>Cookie Policy</p>
           </div>
           <div>
-            <ul className="mt-6 md:mt-0 flex  justify-center gap-3 sm:justify-start ">
+            <ul className="mt-6 flex justify-center gap-3 sm:justify-start md:mt-0">
               <li>
                 <a
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="transition flex items-center gap-2"
+                  className="flex items-center gap-2 transition"
                 >
                   <span className="sr-only">Facebook</span>
-                  <div className="w-12 h-12 bg-primary-90 border-2 border-dark-15 rounded-lg p-3 flex items-center justify-center">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg border-2 border-dark-15 bg-primary-90 p-3">
                     <svg
                       width="24"
                       height="24"
@@ -154,10 +154,10 @@ export default function Footer() {
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="transition flex items-center gap-2"
+                  className="flex items-center gap-2 transition"
                 >
                   <span className="sr-only">Twitter</span>
-                  <div className="w-12 h-12 bg-primary-90 border-2 border-dark-15 rounded-lg p-3 flex items-center justify-center">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg border-2 border-dark-15 bg-primary-90 p-3">
                     <svg
                       width="24"
                       height="20"
@@ -178,10 +178,10 @@ export default function Footer() {
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="transition flex items-center gap-2"
+                  className="flex items-center gap-2 transition"
                 >
                   <span className="sr-only">LinkedIn</span>
-                  <div className="w-12 h-12 bg-primary-90 border-2 border-dark-15 rounded-lg p-3 flex items-center justify-center">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg border-2 border-dark-15 bg-primary-90 p-3">
                     <svg
                       width="20"
                       height="20"
@@ -203,7 +203,7 @@ export default function Footer() {
 
         <div className="mt-8">
           <div className="text-center sm:flex sm:justify-center sm:text-left">
-            <p className="md:text-lg text-sm text-dark-40 font-medium">
+            <p className="text-sm font-medium text-dark-40 md:text-lg">
               Copyright © [2023] Little Learners Academy. All rights reserved.
             </p>
           </div>

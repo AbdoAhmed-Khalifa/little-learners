@@ -4,7 +4,6 @@ import { usePathname } from "next/navigation";
 
 export default function NavBar() {
   const pathname = usePathname();
-  console.log(pathname);
 
   return (
     <ul className="hidden h-20 font-[family-name:var(--font-outfit)] text-[16px] font-medium leading-[24px] lg:flex">
