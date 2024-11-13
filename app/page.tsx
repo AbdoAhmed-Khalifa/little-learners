@@ -1,3 +1,10 @@
+import BenefitsSection from "./_components/BenefitsSection";
+
 export default function Home() {
-  return <div>Home</div>;
+  return (
+    <div>
+      <BenefitsSection />
+      Home
+    </div>
+  );
 }
