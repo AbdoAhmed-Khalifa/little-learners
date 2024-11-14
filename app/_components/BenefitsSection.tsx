@@ -9,13 +9,12 @@ import {
 import { ReactNode } from "react";
 import CardOne from "./card-one";
 
+type CardContent = {
+  title: string;
+  description: string;
+  icon: ReactNode;
+};
 export default function BenefitsSection() {
-  type CardContent = {
-    title: string;
-    description: string;
-    icon: ReactNode;
-  };
-
   const cardOneContent: CardContent[] = [
     {
       title: "Holistic Learning Approach",
