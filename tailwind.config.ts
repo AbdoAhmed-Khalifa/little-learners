@@ -35,7 +35,10 @@ export default {
         raleway: ['var(--font-raleway)'],
       },
       boxShadow: {
-        'card': '6px 6px 0px 2px rgba(30,30,30,1)',
+        'card': '4px 4px 0px 2px rgba(30,30,30,1)',
+        'button': '2px 2px 0px 2px rgba(30,30,30,1)',
+        "line":"4px 1px 0px 4px rgba(255,190,153,1)"
+        
       },
     },
   },
