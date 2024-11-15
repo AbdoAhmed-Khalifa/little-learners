@@ -14,7 +14,7 @@ export default function TestimonialsCard({
   rate: number;
 }) {
   return (
-    <section className="shadow-card flex h-[465px] flex-col items-center justify-center gap-6 rounded-[10px] border-2 border-dark-15 p-[30] md:rounded-xl md:p-[40] lg:p-[50]">
+    <section className="flex h-full flex-col items-center justify-center gap-6 rounded-[10px] border-2 border-dark-15 p-[30] shadow-card md:rounded-xl md:p-[30px] lg:p-[20]">
       <div className="flex flex-col items-center justify-center gap-[10px] md:gap-3">
         <Image
           width={66}

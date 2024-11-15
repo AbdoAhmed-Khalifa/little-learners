@@ -6,10 +6,9 @@ import TestimoinalsSection from "./_components/TestimoinalsSection";
 export default function Home() {
   return (
     <div>
-      Home
-      <PageCardsSection />
       <BenefitsSection />
       <TestimoinalsSection />
+      <PageCardsSection />
     </div>
   );
 }

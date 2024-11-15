@@ -6,6 +6,7 @@ import BtnSlider from "./BtnSlider";
 
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
+import SectionHeader from "./SectionHeader";
 
 export interface Testimonial {
   id: number;
@@ -18,14 +19,14 @@ export const testimonials: Testimonial[] = [
   {
     id: 1,
     avatar: "/images/avatar1.png",
-    name: "Alice Johnson",
+    name: "Alice J",
     rating: 5,
     feedback: "This product has completely transformed our workflow!",
   },
   {
     id: 2,
     avatar: "/images/avatar2.png",
-    name: "Mark Brown",
+    name: "Mark B",
     rating: 4,
     feedback: "Incredible experience! Highly recommended for all developers.",
   },
@@ -39,7 +40,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 4,
     avatar: "/images/avatar3.png",
-    name: "Sarah Lee",
+    name: "Sarah L",
     rating: 5,
     feedback: "The support and features are top-notch. Love working with this!",
   },
@@ -65,21 +66,21 @@ export default function TestimoinalsSection() {
         slides: {
           origin: "center",
           perView: 1,
-          spacing: 16,
+          spacing: 5,
         },
       },
-      "(min-width: 768px)": {
+      "(min-width: 870px)": {
         slides: {
           origin: "center",
           perView: 2,
-          spacing: 16,
+          spacing: 5,
         },
       },
-      "(min-width: 1024px)": {
+      "(min-width: 1140px)": {
         slides: {
           origin: "center",
           perView: 3,
-          spacing: 16,
+          spacing: 5,
         },
       },
     },
@@ -95,7 +96,12 @@ export default function TestimoinalsSection() {
   };
 
   return (
-    <>
+    <section className="mx-20 mt-[200px]">
+      <SectionHeader
+        sectiontitle="our Testimonials"
+        subtitle="Their Happy Words 🤗"
+        description="Our testimonials are heartfelt reflections of the nurturing environment we provide, where children flourish both academically and emotionally."
+      />
       <div className="flex items-center justify-center gap-5 p-10">
         <BtnSlider moveSlide={slideLeft} direction="prev" />
         <div ref={sliderRef} className="keen-slider">
@@ -112,6 +118,6 @@ export default function TestimoinalsSection() {
         </div>
         <BtnSlider moveSlide={slideRight} direction="next" />
       </div>
-    </>
+    </section>
   );
 }
