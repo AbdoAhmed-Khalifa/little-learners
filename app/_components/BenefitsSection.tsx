@@ -8,6 +8,7 @@ import {
 } from "@heroicons/react/20/solid";
 import { ReactNode } from "react";
 import CardOne from "./card-one";
+import SectionHeader from "./SectionHeader";
 
 type CardContent = {
   title: string;
@@ -55,15 +56,22 @@ export default function BenefitsSection() {
   ];
 
   return (
-    <section className="mx-10 mt-20 grid grid-cols-1 gap-x-10 gap-y-[60px] md:grid-cols-2 lg:grid-cols-3">
-      {cardOneContent.map((cardOne) => (
-        <CardOne
-          key={cardOne.title}
-          title={cardOne.title}
-          description={cardOne.description}
-          icon={cardOne.icon}
-        />
-      ))}
+    <section className="mx-20 mt-[200px]">
+      <SectionHeader
+        sectiontitle="Our Benefits"
+        subtitle="Children Deserve Bright Future"
+        description="With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child's future."
+      />
+      <section className="mx-10 mt-20 grid grid-cols-1 gap-x-10 gap-y-[60px] md:grid-cols-2 lg:grid-cols-3">
+        {cardOneContent.map((cardOne) => (
+          <CardOne
+            key={cardOne.title}
+            title={cardOne.title}
+            description={cardOne.description}
+            icon={cardOne.icon}
+          />
+        ))}
+      </section>
     </section>
   );
 }
