@@ -7,7 +7,6 @@ import FaqSection from "./_components/faqComponents/FaqSection";
 export default function Home() {
   return (
     <div>
-      Home
       <BenefitsSection />
       <TestimoinalsSection />
       <FaqSection />

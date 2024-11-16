@@ -11,7 +11,7 @@ export default function BtnSlider({
   return (
     <button
       onClick={moveSlide}
-      className={`flex size-12 items-center justify-center rounded-lg border-2 border-dark-20 p-3 md:size-[58px] md:p-[14px] ${direction === "next" ? "btn-slide next" : "btn-slide prev"}`}
+      className={`flex size-12 items-center justify-center rounded-lg border-2 border-dark-20 p-3 md:size-[58px] md:p-[14px] ${direction === "next" ? "btn-slide next" : "btn-slide prev"} hover:bg-primary-80`}
     >
       {direction === "next" ? (
         <ArrowRightIcon className="size-7" />
