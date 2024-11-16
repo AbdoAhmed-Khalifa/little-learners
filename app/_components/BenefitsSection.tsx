@@ -56,13 +56,13 @@ export default function BenefitsSection() {
   ];
 
   return (
-    <section className="mx-20 mt-[200px]">
+    <section className="mx-4 mt-[200px] md:mx-20">
       <SectionHeader
         sectiontitle="Our Benefits"
         subtitle="Children Deserve Bright Future"
         description="With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child's future."
       />
-      <section className="mx-10 mt-20 grid grid-cols-1 gap-x-10 gap-y-[60px] md:grid-cols-2 lg:grid-cols-3">
+      <section className="mt-20 grid grid-cols-1 gap-x-10 gap-y-[60px] md:grid-cols-2 lg:grid-cols-3">
         {cardOneContent.map((cardOne) => (
           <CardOne
             key={cardOne.title}

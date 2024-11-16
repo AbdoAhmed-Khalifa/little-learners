@@ -7,6 +7,7 @@ import BtnSlider from "./BtnSlider";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import SectionHeader from "./SectionHeader";
+import { useResponsiveState } from "../_hooks/useResponsiveHook";
 
 export interface Testimonial {
   id: number;
@@ -47,6 +48,7 @@ export const testimonials: Testimonial[] = [
   // Add more testimonials as needed
 ];
 export default function TestimoinalsSection() {
+  const isMobile = useResponsiveState("(min-width: 640px)");
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
   const [sliderRef, instanceRef] = useKeenSlider({
@@ -96,14 +98,14 @@ export default function TestimoinalsSection() {
   };
 
   return (
-    <section className="mx-20 mt-[200px]">
+    <section className="mx-4 mt-[200px] md:mx-20">
       <SectionHeader
         sectiontitle="our Testimonials"
         subtitle="Their Happy Words 🤗"
         description="Our testimonials are heartfelt reflections of the nurturing environment we provide, where children flourish both academically and emotionally."
       />
       <div className="flex items-center justify-center gap-5 p-10">
-        <BtnSlider moveSlide={slideLeft} direction="prev" />
+        {isMobile && <BtnSlider moveSlide={slideRight} direction="prev" />}
         <div ref={sliderRef} className="keen-slider">
           {testimonials.map((item, index) => (
             <div className="keen-slider__slide p-3" key={index}>
@@ -116,8 +118,14 @@ export default function TestimoinalsSection() {
             </div>
           ))}
         </div>
-        <BtnSlider moveSlide={slideRight} direction="next" />
+        {isMobile && <BtnSlider moveSlide={slideLeft} direction="next" />}
       </div>
+      {!isMobile && (
+        <div className="flex items-center justify-center gap-5">
+          <BtnSlider moveSlide={slideRight} direction="prev" />
+          <BtnSlider moveSlide={slideLeft} direction="next" />
+        </div>
+      )}
     </section>
   );
 }
