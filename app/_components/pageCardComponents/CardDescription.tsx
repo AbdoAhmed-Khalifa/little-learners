@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-export default function CardDescription({description}:{description:string}) {
-  return (
-    <p className="dark-30 text-base font-medium">
-        {description}
-      </p>
-  )
+export default function CardDescription({
+  description,
+}: {
+  description: string;
+}) {
+  return <p className="text-base font-medium text-dark-30">{description}</p>;
 }
