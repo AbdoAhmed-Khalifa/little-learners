@@ -7,12 +7,12 @@ import HeroSection from "./_components/HeroComponents/HeroSection";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <HeroSection />
       <BenefitsSection />
       <TestimoinalsSection />
       <FaqSection />
       <PageCardsSection />
-    </div>
+    </>
   );
 }

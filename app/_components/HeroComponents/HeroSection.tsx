@@ -1,7 +1,7 @@
 // components/HeroSection.js
 export default function HeroSection() {
   return (
-    <section className="flex flex-col items-center justify-between px-6 py-10 lg:flex-row lg:px-16">
+    <section className="mx-5 mt-10 flex flex-col items-center justify-between gap-x-6 md:mx-10 lg:mx-20 lg:flex-row">
       <div className="relative flex w-full justify-center lg:w-1/2">
         <img
           src="/images/heroImage.svg"

@@ -56,7 +56,7 @@ export default function BenefitsSection() {
   ];
 
   return (
-    <section className="mx-4 mt-[200px] md:mx-20">
+    <section className="mx-5 mt-[120px] md:mx-10 lg:mx-20 lg:mt-[200px]">
       <SectionHeader
         sectiontitle="Our Benefits"
         subtitle="Children Deserve Bright Future"

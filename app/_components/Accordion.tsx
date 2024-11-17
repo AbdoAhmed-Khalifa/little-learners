@@ -15,12 +15,12 @@ const Accordion = ({
   };
 
   return (
-    <div className="mx-auto mt-10 w-full">
+    <div className="h-full w-full">
       <div
-        className={`overflow-hidden rounded-lg ${isOpen ? "bg-white" : "bg-primary-95"} border-2 border-dark-15 px-6 py-6 shadow-md`}
+        className={`overflow-hidden rounded-lg ${isOpen ? "bg-white" : "bg-primary-95"} h-full border-2 border-dark-15 px-6 py-6 shadow-md`}
       >
         <button
-          className="flex w-full items-center justify-between text-left text-lg font-semibold text-dark-15 focus:outline-none"
+          className="flex w-full items-center justify-between gap-x-5 text-left text-lg font-semibold text-dark-15 focus:outline-none"
           onClick={toggleAccordion}
         >
           {question}
