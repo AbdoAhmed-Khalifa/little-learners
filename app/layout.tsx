@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "@/app/_styles/globals.css";
 import { Outfit, Raleway } from "next/font/google";
 import Footer from "./_components/footerComponents/Footer";
-import Header from "./_components/Header";
+import Header from "./_components/navidationComponents/Header";
 
 export const raleway = Raleway({
   subsets: ["latin"],

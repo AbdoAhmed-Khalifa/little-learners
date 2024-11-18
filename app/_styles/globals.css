@@ -43,4 +43,31 @@
       background-color: rgb(0 0 0 / 0%);
     }
   } */
+
+  .timelinsec {
+    position: relative;
+  }
+  .timelinsec::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 15px;
+
+    transform: translateY(-50%);
+    width: 2px;
+    height: 90%;
+    background-color: theme(colors.dark.20);
+    box-shadow: theme(boxShadow.line);
+    z-index: 3;
+  }
+  @media (min-width: 768px) {
+    .timelinsec::before {
+      left: 65px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .timelinsec::before {
+      left: 85px;
+    }
+  }
 }
