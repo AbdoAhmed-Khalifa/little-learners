@@ -18,7 +18,7 @@ export default function PageHeader({
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g clip-path="url(#clip0_123_2429)">
+            <g clipPath="url(#clip0_123_2429)">
               <path
                 d="M0 24.9957L24.9957 0H49.9914V24.9957L24.9957 49.9914H0V24.9957Z"
                 fill="#FFBE99"
