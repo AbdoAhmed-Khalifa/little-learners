@@ -23,27 +23,6 @@
     }
   }
 
-  /* dialog::backdrop {
-    background-color: rgb(0 0 0 / 0%);
-    transition:
-      display 0.7s allow-discrete,
-      overlay 0.7s allow-discrete,
-      background-color 0.7s;
-    
-  }
-
-  dialog[open]::backdrop {
-    background-color: rgb(0 0 0 / 25%);
-  }
-
- 
-
-  @starting-style {
-    dialog[open]::backdrop {
-      background-color: rgb(0 0 0 / 0%);
-    }
-  } */
-
   .timelinsec {
     position: relative;
   }
@@ -52,13 +31,12 @@
     position: absolute;
     top: 50%;
     left: 15px;
-
     transform: translateY(-50%);
     width: 2px;
     height: 90%;
-    background-color: theme(colors.dark.20);
-    box-shadow: theme(boxShadow.line);
     z-index: 3;
+    box-shadow: theme("boxShadow.line");
+    background-color: theme("colors.dark.20");
   }
   @media (min-width: 768px) {
     .timelinsec::before {
@@ -69,5 +47,12 @@
     .timelinsec::before {
       left: 85px;
     }
+  }
+
+  .card {
+    border-radius: 12px;
+    box-shadow: theme("boxShadow.card");
+    border: 2px solid theme("colors.dark.20");
+    padding: 20px;
   }
 }
