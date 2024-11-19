@@ -1,7 +1,6 @@
 import React from "react";
 import MissionVisionsSection from "../_components/Mission&VisionsComponents/MissionVisionsSection";
 import PageHeader from "../_components/PageHeader";
-import TimeLine from "../_components/HistorySectionComponent/TimeLine";
 import TimeLineSection from "../_components/HistorySectionComponent/TimeLineSection";
 import AwardsSection from "../_components/AwardsSectionComponenets/AwardsSection";
 import TeamMembersSection from "../_components/TeamSectionComponents/TeamMembersSection";
