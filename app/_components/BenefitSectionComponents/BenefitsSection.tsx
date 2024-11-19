@@ -10,7 +10,7 @@ import { ReactNode } from "react";
 import SectionHeader from "../SectionHeader";
 import CardOne from "../card-one";
 
-type CardContent = {
+export type CardContent = {
   title: string;
   description: string;
   icon: ReactNode;
