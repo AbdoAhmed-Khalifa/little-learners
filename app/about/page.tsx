@@ -4,6 +4,7 @@ import PageHeader from "../_components/PageHeader";
 import TimeLine from "../_components/HistorySectionComponent/TimeLine";
 import TimeLineSection from "../_components/HistorySectionComponent/TimeLineSection";
 import AwardsSection from "../_components/AwardsSectionComponenets/AwardsSection";
+import TeamMembersSection from "../_components/TeamSectionComponents/TeamMembersSection";
 
 export default function About() {
   return (
@@ -16,6 +17,7 @@ export default function About() {
       <MissionVisionsSection />
       <AwardsSection />
       <TimeLineSection />
+      <TeamMembersSection />
     </>
   );
 }
