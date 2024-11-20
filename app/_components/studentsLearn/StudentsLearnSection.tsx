@@ -1,6 +1,7 @@
 import React from "react";
 import SectionHeader from "../SectionHeader";
 import StudentsLearnCard from "./StudentsLearnCard";
+import { studentsLearn } from "@/app/_constants";
 
 export default function StudentsLearnSection() {
   return (
@@ -11,11 +12,9 @@ export default function StudentsLearnSection() {
         description="Our kinder garden school provides a nurturing and stimulating environment, fostering a love for learning that lasts a lifetime. Join us as we embark on an exciting educational journey together!"
       />
       <section className="mt-20 grid grid-cols-1 gap-x-10 gap-y-[60px] md:grid-cols-2 lg:grid-cols-3">
-        <StudentsLearnCard />
-        <StudentsLearnCard />
-        <StudentsLearnCard />
-        <StudentsLearnCard />
-        <StudentsLearnCard />
+        {studentsLearn.map((item, index) => (
+          <StudentsLearnCard key={index} {...item} />
+        ))}
       </section>
     </section>
   );

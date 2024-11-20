@@ -2,6 +2,7 @@ import React from "react";
 import PageHeader from "../_components/PageHeader";
 import FeaturesSection from "../_components/features/FeaturesSection";
 import StudentsLearnSection from "../_components/studentsLearn/StudentsLearnSection";
+import RoomsGallerySection from "../_components/roomsGallery/RoomsGallerySection";
 
 export default function Academics() {
   return (
@@ -13,6 +14,7 @@ export default function Academics() {
       />
       <FeaturesSection />
       <StudentsLearnSection />
+      <RoomsGallerySection />
     </>
   );
 }

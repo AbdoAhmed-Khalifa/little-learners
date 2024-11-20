@@ -114,4 +114,122 @@ const missionAndVision = [
   },
 ];
 
-export { footerList, pageCardData, faq, missionAndVision };
+const studentsLearn = [
+  {
+    title: "Language Arts",
+    image: "/images/Language.png",
+    description: "Reading, writing, storytelling, and communication skills.",
+  },
+  {
+    title: "Mathematics",
+    image: "/images/mathematics.png",
+    description: "Number sense, basic operations, problem-solving, and logic.",
+  },
+  {
+    title: "Science",
+    image: "/images/science.png",
+    description:
+      "Exploring the natural world through hands-on experiments and investigations.",
+  },
+  {
+    title: "Social Studies",
+    image: "/images/socialstudies.png",
+    description:
+      "Cultivating an understanding of diverse cultures and communities.",
+  },
+  {
+    title: "Arts and Crafts",
+    image: "/images/artsandcrafts.png",
+    description: "Encouraging creativity through various art forms and crafts.",
+  },
+  {
+    title: "Physical Education",
+    image: "/images/physicalEducation.png",
+    description: "Promoting physical fitness, coordination, and teamwork.",
+  },
+];
+const roomsFilters = [
+  { id: "all", label: "All" },
+  { id: "classrooms", label: "Classrooms" },
+  { id: "library", label: "Library" },
+  { id: "science-lab", label: "Science Lab" },
+  { id: "computer-lab", label: "Computer Lab" },
+  { id: "garden", label: "Garden and Nature Area" },
+];
+
+const rooms = [
+  {
+    title: "Classrooms",
+    description:
+      "Our well-equipped classrooms are designed to provide a nurturing and stimulating learning environment. Each classroom is thoughtfully arranged to inspire creativity, curiosity, and engagement.",
+    images: [
+      "/images/classrooms1.png",
+      "/images/classrooms2.png",
+      "/images/classrooms3.png",
+      "/images/classrooms4.png",
+      "/images/classrooms3.png",
+      "/images/classrooms2.png",
+    ],
+  },
+  {
+    title: "Library",
+    description:
+      "Our expansive library is a treasure trove of books, fostering a love for reading and supporting students' literacy development.",
+    images: [
+      "/images/library3.png",
+      "/images/library1.png",
+      "/images/library2.png",
+      "/images/library3.png",
+      "/images/library4.png",
+      "/images/library2.png",
+    ],
+  },
+  {
+    title: "Science Lab",
+    description:
+      "Our hands-on science lab allows students to conduct experiments and explore scientific concepts in a fun and interactive way.",
+    images: [
+      "/images/scienceLab3.png",
+      "/images/scienceLab1.png",
+      "/images/scienceLab2.png",
+      "/images/scienceLab3.png",
+      "/images/scienceLab4.png",
+      "/images/scienceLab4.png",
+    ],
+  },
+  {
+    title: "Computer Lab",
+    description:
+      "Equipped with age-appropriate technology, the computer lab enhances students' digital literacy and computational skills.",
+    images: [
+      "/images/scienceLab3.png",
+      "/images/computerLab1.png",
+      "/images/computerLab2.png",
+      "/images/computerLab3.png",
+      "/images/computerLab4.png",
+      "/images/computerLab2.png",
+    ],
+  },
+  {
+    title: "Garden and Nature Area",
+    description:
+      "Our garden and nature area offer an opportunity for children to connect with nature and learn about plants and the environment.",
+    images: [
+      "/images/gardenArea3.png",
+      "/images/gardenArea2.png",
+      "/images/gardenArea3.png",
+      "/images/gardenArea4.png",
+      "/images/gardenArea2.png",
+    ],
+  },
+];
+
+export {
+  footerList,
+  pageCardData,
+  faq,
+  missionAndVision,
+  studentsLearn,
+  roomsFilters,
+  rooms,
+};
