@@ -10,6 +10,7 @@ import { CardContent } from "../BenefitSectionComponents/BenefitsSection";
 import BtnSlider from "../BtnSlider";
 import CardOne from "../card-one";
 import SectionHeader from "../SectionHeader";
+import "keen-slider/keen-slider.min.css";
 
 export default function AwardsSection() {
   const awardsData: CardContent[] = [
@@ -49,7 +50,6 @@ export default function AwardsSection() {
     },
     loop: true,
     slides: {
-      origin: "center",
       perView: 1,
       spacing: 16,
     },
@@ -96,11 +96,7 @@ export default function AwardsSection() {
       />
 
       <div className="flex items-center justify-center gap-5">
-        <div
-          ref={sliderRef}
-          className="keen-slider"
-          style={{ minHeight: "300px" }}
-        >
+        <div ref={sliderRef} className="keen-slider">
           {awardsData.map((item, index) => (
             <div className="keen-slider__slide px-2 py-10 sm:px-5" key={index}>
               <CardOne
