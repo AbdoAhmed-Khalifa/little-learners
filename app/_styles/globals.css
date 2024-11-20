@@ -55,4 +55,30 @@
     border: 2px solid theme("colors.dark.20");
     padding: 20px;
   }
+
+  /* width */
+  .table-scroll::-webkit-scrollbar {
+    height: 8px;
+    background: theme("colors.dark.15");
+    border-radius: 43px;
+    width: 8px;
+  }
+
+  /* Track */
+  .table-scroll::-webkit-scrollbar-track {
+    /* background: theme("colors.primary.75"); */
+  }
+
+  /* Handle */
+  .table-scroll::-webkit-scrollbar-thumb {
+    background: theme("colors.primary.75");
+    width: 178px;
+    height: 8px;
+    border-radius: 59px;
+  }
+
+  /* Handle on hover */
+  .table-scroll::-webkit-scrollbar-thumb:hover {
+    background: theme("colors.primary.70");
+  }
 }
