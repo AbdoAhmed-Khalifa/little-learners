@@ -1,6 +1,7 @@
 import React from "react";
 import PageHeader from "../_components/PageHeader";
 import AdmissionSection from "../_components/AdmissionSection/AdmissionSection";
+import FeeSection from "../_components/FeeSectionComponents/FeeSection";
 
 export default function Admissions() {
   return (
@@ -11,6 +12,7 @@ export default function Admissions() {
         page="Admission"
       />
       <AdmissionSection />
+      <FeeSection />
     </>
   );
 }
