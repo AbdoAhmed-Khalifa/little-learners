@@ -7,6 +7,7 @@ import {
   PhoneIcon,
 } from "@heroicons/react/20/solid";
 import Link from "next/link";
+import ContactSection from "../_components/contactForm/ContactSection";
 
 export default function Contact() {
   return (
@@ -56,6 +57,7 @@ export default function Contact() {
           </p>
         </section>
       </PageHeader>
+      <ContactSection />
     </>
   );
 }
