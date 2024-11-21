@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import BtnSlider from "../BtnSlider";
 import Image from "next/image";
+import "keen-slider/keen-slider.min.css";
 export default function RoomsSlider({
   title,
   description,
@@ -29,28 +30,14 @@ export default function RoomsSlider({
     breakpoints: {
       "(min-width:640px)": {
         slides: {
-          origin: "center",
-          perView: 2,
-          spacing: 5,
-        },
-      },
-      "(min-width: 870px)": {
-        slides: {
-          origin: "center",
+          origin: "auto",
           perView: 2,
           spacing: 5,
         },
       },
       "(min-width: 1200px)": {
         slides: {
-          origin: "center",
-          perView: 3,
-          spacing: 5,
-        },
-      },
-      "(min-width: 1500px)": {
-        slides: {
-          origin: "center",
+          origin: "auto",
           perView: 4,
           spacing: 5,
         },

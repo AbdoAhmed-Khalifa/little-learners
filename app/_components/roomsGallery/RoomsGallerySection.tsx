@@ -2,6 +2,7 @@ import { rooms } from "@/app/_constants";
 import SectionHeader from "../SectionHeader";
 import RoomsFiltration from "./RoomsFiltration";
 import RoomsSlider from "./RoomsSlider";
+
 export default function RoomsGallerySection() {
   return (
     <section className="mx-5 mt-[120px] md:mx-10 lg:mx-20 lg:mt-[200px]">
