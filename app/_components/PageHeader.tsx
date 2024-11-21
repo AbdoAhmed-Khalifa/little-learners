@@ -1,11 +1,15 @@
+import { ReactNode } from "react";
+
 export default function PageHeader({
   page,
   title,
   content,
+  children,
 }: {
   title: string;
   content: string;
   page: string;
+  children?: ReactNode;
 }) {
   return (
     <div className="mx-5 mt-10 rounded-xl border-2 border-dark-15 bg-white shadow-card md:mx-10 lg:mx-20">
@@ -96,7 +100,7 @@ export default function PageHeader({
           </svg>
         </div>
 
-        <div className="mx-12 grid grid-cols-1 items-center justify-center justify-items-center gap-10 text-left md:grid-cols-2 lg:mx-20">
+        <div className="mx-12 grid grid-cols-1 items-center justify-center justify-items-center gap-10 text-center md:grid-cols-2 md:text-left lg:mx-20">
           <div className="flex flex-col items-center justify-center md:items-start">
             <button className="mb-4 rounded-md border-2 border-dark-15 px-3 py-1.5 font-outfit text-sm font-medium text-dark-20">
               {page}
@@ -105,9 +109,12 @@ export default function PageHeader({
               {title}
             </h1>
           </div>
-          <p className="mt-4 max-w-xl font-outfit font-medium text-dark-20">
-            {content}
-          </p>
+          <div>
+            <p className="mt-4 max-w-xl font-outfit font-medium text-dark-20">
+              {content}
+            </p>
+            <div className="grid-col-1 mt-12 grid gap-2">{children}</div>
+          </div>
         </div>
       </div>
     </div>

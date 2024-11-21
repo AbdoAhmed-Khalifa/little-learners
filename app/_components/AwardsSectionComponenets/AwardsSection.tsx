@@ -56,21 +56,21 @@ export default function AwardsSection() {
     breakpoints: {
       "(min-width:640px)": {
         slides: {
-          origin: "center",
+          origin: "auto",
           perView: 1,
           spacing: 5,
         },
       },
       "(min-width: 870px)": {
         slides: {
-          origin: "center",
+          origin: "auto",
           perView: 2,
           spacing: 5,
         },
       },
       "(min-width: 1200px)": {
         slides: {
-          origin: "center",
+          origin: "auto",
           perView: 3,
           spacing: 5,
         },
