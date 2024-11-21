@@ -2,6 +2,7 @@ import React from "react";
 import PageHeader from "../_components/PageHeader";
 import ExtraActivitiesSection from "../_components/ExtraActivitiesSectionComponents/ExtraActivitiesSection";
 import StudentSupportSection from "../_components/StudentSupportSectionComponents/StudentSupportSection";
+import EventsSection from "../_components/EventsSectionComponents/EventsSection";
 
 export default function StudentsLife() {
   return (
@@ -12,6 +13,7 @@ export default function StudentsLife() {
         page="Enriching Student Life"
       />
       <ExtraActivitiesSection />
+      <EventsSection />
       <StudentSupportSection />
     </>
   );
